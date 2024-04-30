@@ -58,46 +58,86 @@
         </div>
       </div>
     </nav>
-    <main id="contacto" class="main">
-      <h1>INICIA SESION</h1>
-      <form
-        action="enviar.php"
-        method="post"
-        enctype="text/plain"
-        class="formulario"
-      >
-        NombreApellido
-        <input
-          type="text"
-          required
-          placeholder="Ingresa tu nombre y apellido"
-        /><br /><br />
-        Contraseña
-        <input
-          type="password"
-          required
-          placeholder="Ingresa tu contraseña"
-        /><br /><br />
-        Edad
-        <input
-          type="number"
-          required
-          placeholder="Ingresa tu edad"
-        /><br /><br />
-        Mail
-        <input
-          type="email"
-          required
-          placeholder="Ingresa tu mail"
-        /><br /><br />
-        Domicilio
-        <input type="text" placeholder="Ingresa tu domicilio" /><br /><br />
-        NumeroTelefonico
-        <input
-          type="number"
-          placeholder="Ingresa tu numero de telefono"
-        /><br /><br /><br />
-        <input type="submit" />
+    <main class="container contacto">
+      <form class="row g-3 mt-3">
+        <div class="col-12">
+          <label for="nombre-completo" class="form-label"
+            >Nombre y Apellido</label
+          >
+          <input
+            type="text"
+            class="form-control input"
+            id="nombre-completo"
+            placeholder="Escribe tu Nombre y Apellido" required
+          />
+        </div>
+        <div class="col-6">
+          <label for="email" class="form-label">Email</label>
+          <input
+            type="email"
+            class="form-control input"
+            id="email"
+            placeholder="Escribe tu Email" required
+          />
+        </div>
+        <div class="col-6">
+          <label for="password" class="form-label">Contraseña</label>
+          <input
+            type="password"
+            class="form-control input"
+            id="password"
+            placeholder="Escribe tu Contraseña" required
+          />
+        </div>
+        <div class="col-12">
+          <label for="localidad" class="form-label">Localidad</label>
+          <input
+            type="text"
+            class="form-control input"
+            id="localidad"
+            placeholder="Localidad" required
+          />
+        </div>
+        <div class="col-12">
+          <label for="direccion" id="form-label">Direccion</label>
+          <input
+            type="text"
+            class="form-control input"
+            id="direccion"
+            placeholder="Direccion" required
+          />
+        </div>
+        <div class="col-4">
+          <label for="codigo-postal" class="form-label">Codigo Postal</label>
+          <input
+            type="text"
+            class="form-control input"
+            id="codigo-postal"
+            placeholder="Codigo Postal" required
+          />
+        </div>
+        <div class="col-4">
+          <label for="edad" class="form-label">Edad</label>
+          <input
+            type="number"
+            class="form-control input"
+            id="edad"
+            placeholder="Escribe tu edad"
+          />
+        </div>
+        <div class="col-4">
+          <label for="algo" class="form-label">ALGO</label>
+          <input type="text" class="form-control input" id="algo" placeholder="algo">
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <label for="cliente" class="form-label">¿Sos Cliente?</label>
+            <input type="checkbox" class="form-check-control input" id="cliente" />
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary submit">Inicia Sesion</button>
+        </div>
       </form>
     </main>
     <footer>
