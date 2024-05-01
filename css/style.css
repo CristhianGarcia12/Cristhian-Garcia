@@ -5,31 +5,39 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .navbar{
-    background-color: darkmagenta;
+    background-color: rgb(250, 107, 131);
 }
 .nav-link{
-    color: yellow !important;
-    font-size: 30px;
+    color: darkmagenta !important;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+.body{
+    background-color: pink;
 }
 .jumbotron{
-    color: red;
     background-image: url(../imagenes/Entrada.jpeg);
-    height: 700px;
+    height: 650px;
     background-position: center;
     background-size: cover;
+}
+.jumbotron h1{
+    margin-top: 300px;
+    text-align: center;
+    color: red;
+    text-shadow: 0 0 5px blue;
 }
 h2{
     background-color: darkmagenta;
     color: yellow;
     text-align: center;
     text-decoration: underline;
-    margin-top: 10px;
     padding: 15px;
 }
 .galeria{
     display: grid;
     grid-template-columns: repeat(2, 1fr) ;
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(3, 400px);
     grid-template-areas: 
     "img1 img2 "
     "img3 img4"
@@ -39,8 +47,8 @@ h2{
 }
 .item{
     border: 5px solid darkmagenta;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
     border-radius: 7px;
     transition: all 0.7s;
     filter: grayscale(100%);
@@ -51,25 +59,26 @@ h2{
 }
 .item1{
     grid-area: img1;
-    background-image: url(../imagenes/barba.jpg);
+    background-image: url(../imagenes/cerealitas.png);
 }
 .item2{
     grid-area: img2;
-    background-image: url(../imagenes/manos.jpg);
+    background-image: url(../imagenes/don\ satur.png);
 }
 .item3{
     grid-area: img3;
-    background-image: url(../imagenes/manos2.jpg);
+    background-image: url(../imagenes/pepito.png);
 }
 .item4{
     grid-area: img4;
-    background-image: url(../imagenes/ojo.jpg);
+    background-image: url(../imagenes/triopepas.jpeg);
 }
 .item5{
     grid-area: img5;
-    background-image: url(../imagenes/viejos.jpg);
+    background-image: url(../imagenes/rumba.png);
 }
 .fin-galeria{
+    background-color: pink;
     text-align: center;
     font-size: 35px;
 }
@@ -80,6 +89,7 @@ h2{
 .fin-galeria a{
     background-color: yellow;
     border: 5px solid blue;
+    border-radius: 7px;
     text-decoration: none;
 }
 .fin-galeria a:hover{
@@ -106,11 +116,16 @@ h3{
     text-align: center;
 }
 .mas-info{
-background-color: darkmagenta;
-text-decoration: none;
-font-size: 25px;
-text-shadow: 0 0 5px blue;
-padding: 15px;
+    margin-left: 400px;
+    background-color: yellow;
+    border: 5px solid blue;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 15px;
+}
+.mas-info:hover{
+    background-color: black;
 }
 h4{
     background-color: darkmagenta;
@@ -132,6 +147,12 @@ article p{
     font-size: 30px;
     color: darkmagenta;
 }
+.nosotros2{
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 7px;
+}
+
 .contacto{
     text-align: center;
 }
@@ -167,21 +188,36 @@ label{
     height: 60vh;
     width: 100vh;
 }
-.nosotros h1{
-    margin-top: 30px;
+.nosotros-quienes-somos h1{
     text-align: center;
     color: darkmagenta;
     text-shadow: 0 0 5px blue;
-    text-transform: uppercase;
     text-decoration: underline;
+    font-size: 45px;
 }
-.nosotros p{
-    font-size: 30px;
+.nosotros-quienes-somos p{
     text-align: center;
-    margin: 80px;
-    padding: 80px;
+    color: red;
+    font-size: 30px;
+}
+.nosotros2 h1{
+    margin-bottom: 100px;
+    margin-top: 100px;
     color: darkmagenta;
     text-shadow: 0 0 5px blue;
+    text-decoration: underline;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+.nosotros2 p{
+    color: red;
+    font-size: 35px;
+}
+.ubicacion h1{
+    color: red;
+}
+.ubicacion{
+    text-align: center;
 }
 footer{
     background-color: darkmagenta;
@@ -194,7 +230,7 @@ footer{
 footer a{
     color: blue;
     font-size: 35px;
-    letter-spacing: 15px;
+    letter-spacing: 35px;
     text-decoration: none;
 }
 footer a:hover{
