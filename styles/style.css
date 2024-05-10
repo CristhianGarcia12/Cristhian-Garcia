@@ -25,10 +25,6 @@
   background-size: cover;
 }
 
-.productos-vendidos {
-  background-color: rgb(188, 126, 240);
-}
-
 h2 {
   background-color: darkmagenta;
   color: white;
@@ -88,11 +84,9 @@ h2 {
   text-align: center;
   font-size: 25px;
 }
-
 .fin-galeria p {
   color: darkmagenta;
 }
-
 .fin-galeria a {
   background-color: darkmagenta;
   border: 2px solid darkmagenta;
@@ -100,7 +94,6 @@ h2 {
   border-radius: 7px;
   text-decoration: none;
 }
-
 .fin-galeria a:hover {
   background-color: white;
 }
@@ -120,7 +113,7 @@ h3 {
 
 .quienes-somos {
   font-size: 25px;
-  color: darkmagenta;
+  color: white;
   text-align: center;
 }
 
@@ -133,7 +126,6 @@ h3 {
   font-size: 25px;
   padding: 3px;
 }
-
 .mas-info:hover {
   background-color: white;
 }
@@ -151,12 +143,10 @@ article {
   border: 2px solid rgb(153, 9, 158);
   text-align: center;
 }
-
 article i {
   font-size: 30px;
   color: darkmagenta;
 }
-
 article p {
   font-size: 18px;
   color: darkmagenta;
@@ -164,49 +154,6 @@ article p {
 
 .nosotros-carrousel {
   margin-left: 165px;
-}
-
-.nosotros2 {
-  background-color: rgb(188, 126, 240);
-  border-radius: 7px;
-}
-
-.contacto {
-  text-align: center;
-}
-
-.contacto {
-  color: darkmagenta;
-}
-
-.input {
-  border-radius: 10px;
-  background-color: rgb(220, 188, 247);
-  color: black;
-  border: 5px solid darkmagenta;
-}
-
-.submit {
-  font-size: 23px;
-  border: 3px solid darkmagenta;
-  background-color: darkmagenta;
-  color: pink;
-}
-
-.submit:hover {
-  background-color: white;
-  color: pink;
-}
-
-label {
-  font-size: 30px;
-  color: blue;
-}
-
-.main {
-  background-color: yellow;
-  color: darkmagenta;
-  font-size: 30px;
 }
 
 .slide {
@@ -218,16 +165,21 @@ label {
   width: 100vh;
 }
 
-.nosotros-quienes-somos h1 {
+.nosotros2 {
+  background-color: rgb(188, 126, 240);
+  border-radius: 7px;
+}
+
+.nosotros-quienes-somos {
   text-align: center;
+}
+.nosotros-quienes-somos h1 {
   color: darkmagenta;
   text-shadow: 0 0 5px blue;
   text-decoration: underline;
   font-size: 45px;
 }
-
 .nosotros-quienes-somos p {
-  text-align: center;
   color: red;
   font-size: 30px;
 }
@@ -246,12 +198,30 @@ label {
   font-size: 35px;
 }
 
+.ubicacion {
+  text-align: center;
+}
 .ubicacion h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
   color: darkmagenta;
 }
 
-.ubicacion {
+.servicios {
   text-align: center;
+  color: darkmagenta;
+}
+.servicios h1 {
+  font-size: 40px;
+}
+.servicios p {
+  font-size: 25px;
+}
+.servicios img {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  height: 500px;
+  width: 500px;
 }
 
 .titulo-productos {
@@ -285,11 +255,9 @@ label {
   border: 5px solid black;
   border-radius: 10px;
 }
-
 .item-productos:hover {
   box-shadow: 0 10px 20px blue;
 }
-
 .item-productos img {
   width: 100%;
   height: 300px;
@@ -298,11 +266,9 @@ label {
   border-radius: 10px 10px 0 0;
   transition: all 0.5s;
 }
-
-.item-productos:hover img {
+.item-productos img:hover {
   transform: scale(1.2);
 }
-
 .item-productos figure {
   overflow: hidden;
 }
@@ -329,23 +295,33 @@ label {
   cursor: pointer;
 }
 
-.servicios {
+.contacto {
   text-align: center;
-}
-
-.servicios h1 {
   color: darkmagenta;
-  font-size: 40px;
 }
 
-.servicios p {
-  color: darkmagenta;
-  font-size: 25px;
+.input {
+  border-radius: 10px;
+  background-color: rgb(220, 188, 247);
+  color: black;
+  border: 5px solid darkmagenta;
 }
 
-.servicios img {
-  height: 500px;
-  width: 500px;
+.submit {
+  font-size: 23px;
+  border: 3px solid darkmagenta;
+  background-color: darkmagenta;
+  color: pink;
+}
+
+.submit:hover {
+  background-color: white;
+  color: pink;
+}
+
+label {
+  font-size: 30px;
+  color: blue;
 }
 
 footer {
@@ -361,7 +337,6 @@ footer a {
   letter-spacing: 35px;
   text-decoration: none;
 }
-
 footer a:hover {
   color: white;
 }

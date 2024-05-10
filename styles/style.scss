@@ -7,6 +7,7 @@
 $color1: rgb(188,126,240);
 $color2: darkmagenta;
 $color3: pink;
+$color4: white;
 $font1: fantasy;
 $font2: arial;
 
@@ -17,7 +18,7 @@ $font2: arial;
     background-color: $color1;
 }
 .nav-link{
-    color: white !important;
+    color: $color4 !important;
     font-size: 28px;
     letter-spacing: 2px;
 }
@@ -27,12 +28,9 @@ $font2: arial;
     background-position: center;
     background-size: cover;
 }
-.productos-vendidos{
-    background-color: rgb(188, 126, 240);
-}
 h2{
-    background-color:darkmagenta;
-    color: white;
+    background-color: $color2;
+    color: $color4;
     text-align: center;
     padding: 15px;
 }
@@ -48,7 +46,7 @@ h2{
     padding: 10px;
 }
 .item{
-    border: 5px solid darkmagenta;
+    border: 5px solid $color2;
     background-position: center;
     background-size: cover;
     border-radius: 7px;
@@ -82,19 +80,19 @@ h2{
 .fin-galeria{
     text-align: center;
     font-size: 25px;
-}
-.fin-galeria p{
-    color: darkmagenta;
-}
-.fin-galeria a{
-    background-color: darkmagenta;
-    border: 2px solid darkmagenta;
-    color: pink;
-    border-radius: 7px;
-    text-decoration: none;
-}
-.fin-galeria a:hover{
-    background-color: white;
+    p{
+        color: $color2;
+    }
+    a{
+        background-color: $color2;
+        border: 2px solid $color2;
+        color: $color3;
+        border-radius: 7px;
+        text-decoration: none;
+        &:hover{
+            background-color: $color4;
+        }
+    }
 }
 .nleft{
     background-image: url(../imagenes/ProductosEstanterias.webp);
@@ -103,31 +101,31 @@ h2{
     background-position: center;
 }
 h3{
-    background-color: darkmagenta;
-    color: white;
+    background-color: $color2;
+    color: $color4;
     text-align: center;
 }
 .quienes-somos{
     font-size: 25px;
-    color: darkmagenta;
+    color: $color4;
     text-align: center;
 }
 .mas-info{
-    background-color: darkmagenta;
-    border: 2px solid darkmagenta;
-    color: pink;
+    background-color: $color2;
+    border: 2px solid $color2;
+    color: $color3;
     border-radius: 7px;
     text-decoration: none;
     font-size: 25px;
     padding: 3px;
-}
-.mas-info:hover{
-    background-color: white;
+    &:hover{
+        background-color: $color4;
+    }
 }
 h4{
-    background-color: darkmagenta;
+    background-color: $color2;
     border-radius: 5px;
-    color: white;
+    color: $color4;
     font-size: 23px;
     margin: 25px;
     padding: 10px;
@@ -135,53 +133,17 @@ h4{
 article{
     border: 2px solid rgb(153, 9, 158);
     text-align: center;
-}
-article i{
-    font-size: 30px;
-    color: darkmagenta;
-}
-article p{
-    font-size: 18px;
-    color: darkmagenta;
+    i{
+        font-size: 30px;
+        color: $color2;
+    }
+    p{
+        font-size: 18px;
+        color: $color2;
+    }
 }
 .nosotros-carrousel{
     margin-left: 165px;
-}
-.nosotros2{
-    background-color: rgb(188, 126, 240);
-    border-radius: 7px;
-}
-
-.contacto{
-    text-align: center;
-}
-.contacto{
-    color: darkmagenta;
-}
-.input{
-    border-radius: 10px;
-    background-color: rgb(220, 188, 247);
-    color: black;
-    border: 5px solid darkmagenta;  
-}
-.submit{
-    font-size: 23px;
-    border: 3px solid darkmagenta;
-    background-color: darkmagenta;
-    color: pink;
-}
-.submit:hover{
-    background-color: white;
-    color: pink;
-}
-label{
-    font-size: 30px;
-    color: blue;
-}
-.main{
-    background-color: yellow;
-    color: darkmagenta;
-    font-size: 30px;
 }
 .slide{
     margin-top: 10px;
@@ -190,42 +152,65 @@ label{
     height: 60vh;
     width: 100vh;
 }
-.nosotros-quienes-somos h1{
-    text-align: center;
-    color: darkmagenta;
-    text-shadow: 0 0 5px blue;
-    text-decoration: underline;
-    font-size: 45px;
+.nosotros2{
+    background-color: $color1;
+    border-radius: 7px;
 }
-.nosotros-quienes-somos p{
+.nosotros-quienes-somos{
     text-align: center;
-    color: red;
-    font-size: 30px;
+    h1{
+            color: $color2;
+            text-shadow: 0 0 5px blue;
+            text-decoration: underline;
+            font-size: 45px;
+    }
+    p{
+            color: red;
+            font-size: 30px;
+    }
 }
 .nosotros2 h1{
     margin-bottom: 100px;
     margin-top: 100px;
-    color: darkmagenta;
-    text-shadow: 10px 0 10px white;
+    color: $color2;
+    text-shadow: 10px 0 10px $color4;
     font-size: 45px;
     text-transform: uppercase;
 }
 .nosotros2 p{
-    color: white;
+    color: $color4;
     font-size: 35px;
-}
-.ubicacion h1{
-    color: darkmagenta;
 }
 .ubicacion{
     text-align: center;
+    h1{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: $color2;
+    }
+}
+.servicios{
+    text-align: center;
+    color: $color2;
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 25px;
+    }
+    img{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        height: 500px;
+        width: 500px;
+    }
 }
 .titulo-productos{
     text-align: center;
-    color: darkmagenta;
+    color: $color2;
 }
 .sector-galletitas{
-    background-color: darkmagenta;
+    background-color: $color2;
 }
 .imagen-productos{
     display: flex;
@@ -245,22 +230,22 @@ label{
 .item-productos{
     border: 5px solid black;
     border-radius: 10px;
-}
-.item-productos:hover{
-    box-shadow: 0 10px 20px blue;
-}
-.item-productos img{
+    &:hover{
+        box-shadow: 0 10px 20px blue;
+    }
+    img{
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
     transition: all .5s;
-}
-.item-productos:hover img{
-    transform: scale(1.2);
-}
-.item-productos figure{
-    overflow: hidden;
+    &:hover{
+        transform: scale(1.2);
+    }
+    }
+    figure{
+        overflow: hidden;
+    }
 }
 .info-producto{
     padding: 15px 30px;
@@ -277,45 +262,54 @@ label{
     border: none;
     background: none;
     background-color: black;
-    color: white;
+    color: $color4;
     padding: 15px 10px;
     cursor: pointer;
 }
-.servicios{
+.contacto{
     text-align: center;
+    color: $color2;
 }
-.servicios h1{
-    color: darkmagenta;
-    font-size: 40px;
+.input{
+    border-radius: 10px;
+    background-color: rgb(220, 188, 247);
+    color: black;
+    border: 5px solid $color2;  
 }
-.servicios p{
-    color: darkmagenta;
-    font-size: 25px;
+.submit{
+    font-size: 23px;
+    border: 3px solid $color2;
+    background-color: $color2;
+    color: $color3;
 }
-.servicios img{
-    height: 500px;
-    width: 500px;
+.submit:hover{
+    background-color: $color4;
+    color: $color3;
+}
+label{
+    font-size: 30px;
+    color: blue;
 }
 footer{
-    background-color: rgb(188, 126, 240);
+    background-color: $color1;
     text-align: center;
-    color: white;
+    color: $color4;
     font-size: 18px;
     
 }
 footer a{
-    color: darkmagenta;
+    color: $color2;
     font-size: 35px;
     letter-spacing: 35px;
     text-decoration: none;
-}
-footer a:hover{
-    color: white;
+    &:hover{
+        color: $color4;
+    }
 }
 .whatsapp{
     height: 35px;
     width: 33px;
-    color: darkmagenta;
+    color: $color2;
     position: fixed;
     right: 40px;
     bottom: 10px;
