@@ -1,0 +1,27 @@
+footer{
+    background-color: $color1;
+    text-align: center;
+    color: $color4;
+    font-size: 18px;
+    
+}
+footer a{
+    color: $color2;
+    font-size: 35px;
+    letter-spacing: 35px;
+    text-decoration: none;
+    &:hover{
+        color: $color4;
+    }
+}
+.whatsapp{
+    height: 35px;
+    width: 33px;
+    color: $color2;
+    position: fixed;
+    right: 40px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 35px;
+}

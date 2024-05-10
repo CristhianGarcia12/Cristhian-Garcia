@@ -1,8 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "_nosotros";
+@import "_servicios";
+@import "_productos";
+@import "contacto";
+@import "_footer";
 
 $color1: rgb(188,126,240);
 $color2: darkmagenta;
@@ -11,16 +11,13 @@ $color4: white;
 $font1: fantasy;
 $font2: arial;
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .body{
     background-color: rgb(253, 214, 221);
-}
-.navbar{
-    background-color: $color1;
-}
-.nav-link{
-    color: $color4 !important;
-    font-size: 28px;
-    letter-spacing: 2px;
 }
 .jumbotron{
     background-image: url(../imagenes/Entrada.jpeg);
@@ -107,13 +104,13 @@ h3{
 }
 .quienes-somos{
     font-size: 25px;
-    color: $color4;
+    color: $color2;
     text-align: center;
 }
 .mas-info{
     background-color: $color2;
     border: 2px solid $color2;
-    color: $color3;
+    color: $color4;
     border-radius: 7px;
     text-decoration: none;
     font-size: 25px;
@@ -141,179 +138,4 @@ article{
         font-size: 18px;
         color: $color2;
     }
-}
-.nosotros-carrousel{
-    margin-left: 165px;
-}
-.slide{
-    margin-top: 10px;
-}
-.slide img{
-    height: 60vh;
-    width: 100vh;
-}
-.nosotros2{
-    background-color: $color1;
-    border-radius: 7px;
-}
-.nosotros-quienes-somos{
-    text-align: center;
-    h1{
-            color: $color2;
-            text-shadow: 0 0 5px blue;
-            text-decoration: underline;
-            font-size: 45px;
-    }
-    p{
-            color: red;
-            font-size: 30px;
-    }
-}
-.nosotros2 h1{
-    margin-bottom: 100px;
-    margin-top: 100px;
-    color: $color2;
-    text-shadow: 10px 0 10px $color4;
-    font-size: 45px;
-    text-transform: uppercase;
-}
-.nosotros2 p{
-    color: $color4;
-    font-size: 35px;
-}
-.ubicacion{
-    text-align: center;
-    h1{
-        margin-top: 50px;
-        margin-bottom: 50px;
-        color: $color2;
-    }
-}
-.servicios{
-    text-align: center;
-    color: $color2;
-    h1{
-        font-size: 40px;
-    }
-    p{
-        font-size: 25px;
-    }
-    img{
-        margin-top: 40px;
-        margin-bottom: 40px;
-        height: 500px;
-        width: 500px;
-    }
-}
-.titulo-productos{
-    text-align: center;
-    color: $color2;
-}
-.sector-galletitas{
-    background-color: $color2;
-}
-.imagen-productos{
-    display: flex;
-    justify-content: center;
-}
-.left-galletitas{
-    background-image: url(../imagenes/cerealitas.png);
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-}
-.container-items{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-.item-productos{
-    border: 5px solid black;
-    border-radius: 10px;
-    &:hover{
-        box-shadow: 0 10px 20px blue;
-    }
-    img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    transition: all .5s;
-    &:hover{
-        transform: scale(1.2);
-    }
-    }
-    figure{
-        overflow: hidden;
-    }
-}
-.info-producto{
-    padding: 15px 30px;
-    line-height: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.price{
-    font-size: 18px;
-    font-weight: 900;
-}
-.info-productos button{
-    border: none;
-    background: none;
-    background-color: black;
-    color: $color4;
-    padding: 15px 10px;
-    cursor: pointer;
-}
-.contacto{
-    text-align: center;
-    color: $color2;
-}
-.input{
-    border-radius: 10px;
-    background-color: rgb(220, 188, 247);
-    color: black;
-    border: 5px solid $color2;  
-}
-.submit{
-    font-size: 23px;
-    border: 3px solid $color2;
-    background-color: $color2;
-    color: $color3;
-}
-.submit:hover{
-    background-color: $color4;
-    color: $color3;
-}
-label{
-    font-size: 30px;
-    color: blue;
-}
-footer{
-    background-color: $color1;
-    text-align: center;
-    color: $color4;
-    font-size: 18px;
-    
-}
-footer a{
-    color: $color2;
-    font-size: 35px;
-    letter-spacing: 35px;
-    text-decoration: none;
-    &:hover{
-        color: $color4;
-    }
-}
-.whatsapp{
-    height: 35px;
-    width: 33px;
-    color: $color2;
-    position: fixed;
-    right: 40px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 40px;
-    font-size: 35px;
 }
