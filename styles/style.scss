@@ -2,21 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-img{
-    max-width: 100%;
+
+$color1: rgb(188,126,240);
+$color2: darkmagenta;
+$color3: pink;
+$font1: fantasy;
+$font2: arial;
+
+.body{
+    background-color: rgb(253, 214, 221);
 }
 .navbar{
-    background-color: rgb(188, 126, 240);
+    background-color: $color1;
 }
 .nav-link{
     color: white !important;
     font-size: 28px;
     letter-spacing: 2px;
-}
-.body{
-    background-color: rgb(253, 214, 221);
 }
 .jumbotron{
     background-image: url(../imagenes/Entrada.jpeg);
